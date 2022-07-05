@@ -1,10 +1,9 @@
 #demander âge et pour chaque année depuis sa naissance dire "il y a X ans, tu avais Y ans"
 
-puts "Which year were you born ?"
+puts "How old are you ?"
 print ">"
-year = gets.chomp.to_i
+age = gets.chomp.to_i
 
-year.upto(2022) do |n|
-  back = 2022-n
-  puts "There is #{back} years, you were #{n-year} years old"
+for i in 0..age
+  puts "There is #{age - i} years, you were #{i} years old"
 end
