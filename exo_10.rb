@@ -5,7 +5,7 @@ puts "Which year were you born ?"
 print ">"
 year = gets.chomp.to_i
 
-until year == 2023 do
-  puts year
-  year = year + 1
+year.upto(2022) do |n|
+  puts "In #{n} you were #{n-year} years old"
 end
+
